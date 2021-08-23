@@ -56,6 +56,7 @@ h2 {
   text-transform: uppercase;
   font-weight: 500;
   display: inline-block;
+  border-radius: 100px;
 }
 
 .btn:hover,
@@ -71,6 +72,10 @@ h2 {
 .btn--small {
   font-size: 14px;
   padding: 8px 12px;
+}
+
+img {
+  border-radius: 12px;
 }
 
 /* ------------------------ */
@@ -96,6 +101,8 @@ h1 {
 
   line-height: 1.1;
   letter-spacing: -1px;
+
+  /* text-shadow: 0 5px 5px rgba(63, 33, 33, 0.2); */
 }
 
 .header-text {
@@ -155,6 +162,17 @@ img {
 }
 
 /* CHAIRS */
+
+.chair {
+  box-shadow: 0 20px 30px 0 rgba(63, 33, 33, 0.07);
+  /* horizontal offset, vertical offset,  blur, optional scale shadow (0), color*/
+}
+
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .chair-box {
   padding: 24px;
 }
@@ -182,7 +200,7 @@ h3 {
 
 .chair-icon {
   stroke: #087f5b;
-  /* eğer outlne değil de solid icon kullansaydıy, o zaman stroke property yerine "fill" property ullanacaktık.  */
+  /* eğer outlne değil de solid icon kullansaydık, o zaman stroke property yerine "fill" property ullanacaktık.  */
   /* fill: red; */
 
   width: 24px;
